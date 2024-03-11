@@ -53,3 +53,84 @@ class Decimal_Counter:
         return self.value
 
 '''
+# 3.	Реализуйте класс Shop. Предусмотреть возможность работы с произвольным числом продуктов, поиска
+# продуктов по названию, добавления их в магазин и удаления продуктов из него.
+#
+# class Shop:
+#     def __init__(self):
+#         self.products = {}
+#
+#     def add_product(self, name):
+#         if name not in self.products:
+#             self.products[name] = {}
+#             print(f"Product {name} added.")
+#         else:
+#             print(f"Product {name} already exists.")
+#
+#     def remove_product(self, name):
+#         if name in self.products:
+#             del self.products[name]
+#             print(f"Product {name} deleted.")
+#         else:
+#             print(f"Product {name} not found.")
+#
+#     def find_product(self, name: str):
+#         if name in self.products:
+#             print(f"Found product {name}")
+#         return None
+#
+#     def list_products(self):
+#         for name in self.products:
+#             print(f"Name: {name}")
+#
+#
+# shop = Shop()
+# shop.add_product("Meat")
+# shop.add_product("Bread")
+# shop.add_product("Milk")
+#
+# shop.list_products()
+#
+# shop.remove_product("Milk")
+#
+# shop.find_product("Bread")
+#
+# 4.	Реализуйте класс MoneyBox, для работы с виртуальной копилкой. Каждая копилка имеет ограниченную
+# вместимость, которая выражается целым числом – количеством монет(capacity -вместимость), которые можно
+# положить в копилку. Класс должен поддерживать информацию о количестве монет в копилке, предоставлять
+# возможность добавлять монеты в копилку и узнавать, можно ли добавить в копилку ещё какое-то количество
+# монет, не превышая ее вместимость.
+# Класс должен иметь следующий вид:
+# class MoneyBox:
+#     def__init__(self, capacity) :
+#     #конструктор с аргументом- вместимость копилки
+#     def can_add(self,v)
+#     #True, если можно добавить v монет, False иначе
+#     def add(self,v)
+#     #положить v монет в копилку
+#
+# При создании копилки, число монет в ней равно 0.
+# Гарантируется, что метод add(self, v) будет вызываться только если can_add(self, v) – True.
+# class MoneyBox:
+#     def __init__(self, capacity: int) -> None:
+#         self.capacity = capacity
+#         self.coins = 0
+#
+#     def can_add(self, v: int):
+#         return self.coins + v <= self.capacity
+#
+#     def add(self, v: int):
+#         if self.can_add(v):
+#             self.coins += v
+#             print(f"Added {v} coins.")
+#         else:
+#             print("Can't add coins because Money Box is full.")
+#
+#     def get_coins(self):
+#         print(f"In Money Box {self.coins} coins")
+#
+# box = MoneyBox(10)
+# box.add(4)
+# box.add(3)
+# box.add(4)
+# box.get_coins()
