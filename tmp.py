@@ -38,4 +38,64 @@
 #     elif user_number == "y":
 #         play_game()
 
+#
+# class Car:
+#     def __init__(self, model: str):
+#         self._model = model
+#     def info_car(self):
+#         print(f"This is car {self._model}")
+#
+# class Truck(Car):
+#     def info_truck(self):
+#         # super().info_car()
+#         # self.info_car()
+#         print("This is Truck method")
+#
+#
+# truck = Truck(model="Volvo")
+#
+#
+# truck.info_truck()
+# truck.info_car()
+# truck.
+#
+# class GetInfoRoomMixin:
+#     def info_room(self, current_time):
+#         return "some_room"
+#
+#
+# class GetInfoRoomMixin:
+#     def info_room(self, current_time):
+#         return "some_room"
+#
+#
+# class User:
+#     pass
+#
+#
+# class Student(User, GetInfoRoomMixin):
+#     pass
+#
+#
+# class Professor(User, GetInfoRoomMixin):
+#     pass
+#
+# class User:
+#     pass
+#
+#
+# class Student(User, GetInfoRoomMixin):
+#     pass
+#
+#
+# class Professor(User, GetInfoRoomMixin):
+#     pass
+
+name = 'Bob'
+
+
+if name == 'Bob' or 'Tom' or 'Mike':
+    print('Yes')
+else:
+    print('No')
 

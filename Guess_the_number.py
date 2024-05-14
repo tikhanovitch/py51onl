@@ -8,6 +8,7 @@ while user_number != "y" and user_number != "n":
     if user_number == "y":
         while True:
             x = random.randint(1, 100)
+            print(x)
             user_number = input('Guess a number from 1 to 100. Enter number ("x" - for exit): ')
             if user_number == 'x':
                 break
